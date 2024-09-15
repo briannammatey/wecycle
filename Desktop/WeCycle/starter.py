@@ -20,7 +20,7 @@ class Period:
         return(self.end_date- self.start_date).days
     
     def is_irregular(self):
-        return self.calculate_duration()>7
+        return self.calculate_duration()>10
     
 @app.route("/calculate-period", methods=["POST"])
 def calculate_period():
